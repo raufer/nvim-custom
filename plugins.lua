@@ -63,9 +63,9 @@ local plugins = {
 
   {
     "Pocco81/TrueZen.nvim",
-    cmd = { "TZAtaraxis", "TZMinimalist" },
+    cmd = { "TZAtaraxis", "TZMinimalist", "TZFocus", "TZNarrow"},
     config = function()
-      require "custom.configs.truezen" -- just an example path
+      require("true-zen").setup()
     end,
   },
   
